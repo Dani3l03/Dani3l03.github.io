@@ -1,0 +1,134 @@
+.formacao{
+  background: #141414;
+  color: #ffffff;
+}
+.formacao{
+    display: grid;
+    max-width: 1800px;
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+}
+.form{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+}
+.center{
+    grid-column: 2;
+} 
+.desc_form{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    max-width: 40ch;
+    color: #bdb9b9;
+    grid-column: 2;
+    margin-bottom: 50px;
+    max-width: 40ch;
+}
+.description{
+    grid-column: 2;
+    margin-bottom: 0px;
+}
+.estudo{
+    display: flex;
+    grid-column: 2; 
+    color: #bdb9b9;
+    gap: 20px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.estudo li{
+    display: grid;
+    gap: 20px;
+    background:#222222;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 0px;
+    position: relative;
+}
+.estudo span{
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+.estudo h3{
+    margin-bottom: 60px;
+    align-self: center;
+}
+h4{
+    text-transform: uppercase;
+    color: #bdb9b9;
+    position: relative;
+}
+.curso::before{
+    content: url(/img/cursos.svg);
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+.idioma::before{
+    content: url(/img/idiomas.svg);
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+.local::before{
+    content: "";
+    display: block;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    left: -5px;
+}
+.idiomas{
+    grid-column: 2;
+}
+.idiomas p{
+    font-size: 1.15rem;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.cursos{
+    margin-top: 40px;
+    grid-column: 2;
+}
+.cursos p{
+    font-size: 1.15rem;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.curso-describe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; 
+}
+.curso-describe span{
+   justify-self: end;
+   color: #bdb9b9;
+}
+
+.idiomas span{
+    color: #b1b1b1
+}
+
+@media (max-width: 800px) {
+  .formacao{
+    grid-template-columns: 1fr;
+  }
+  .formacao-container{
+    grid-column: 1;
+  }
+    .form{
+        color: #b1b1b1
+    }
+}
+
+
